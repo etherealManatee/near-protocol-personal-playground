@@ -1,0 +1,24 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9",
+    "vite-plugin-solid": "^2.2.6"
+  },
+  "dependencies": {
+    "near-api-js": "^0.44.2",
+    "solid-js": "^1.4.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": ""
+}
