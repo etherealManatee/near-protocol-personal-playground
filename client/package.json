@@ -20,8 +20,5 @@
   "dependencies": {
     "near-api-js": "^0.44.2",
     "solid-js": "^1.4.2"
-  },
-  "main": "index.js",
-  "keywords": [],
-  "author": ""
+  }
 }
