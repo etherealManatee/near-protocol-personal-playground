@@ -1,12 +1,12 @@
-// import { createRoot } from "solid-js";
-// import setUpWalletStore from "./wallet";
+import { createRoot } from "solid-js";
+import setUpWalletStore from "./wallet";
 
-// function createStore() {
-//   const wallet = setUpWalletStore();
+function createStore() {
+  const wallet = setUpWalletStore();
 
-//   return {
-//     wallet,
-//   };
-// }
+  return {
+    wallet,
+  };
+}
 
-// export default createRoot(createStore);
+export default createRoot(createStore);
