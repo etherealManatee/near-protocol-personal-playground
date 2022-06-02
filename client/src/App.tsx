@@ -5,26 +5,23 @@ import { config } from "./utils/near";
 
 const App: Component = () => {
   const {
-    wallet: { walletConnection, nearConnection },
+    wallet: { contract, currentUser, walletConnection },
   } = store;
   const [isSignedIn, setIsSignedIn] = createSignal<boolean>(false);
-  // const initialize = async () => {
-  //   //initialize connection to the NEAR testnet
-  //   const connectToNearTestnet = await nearAPI.connect({
-  //     deps: {
-  //       keyStore: new nearAPI.keyStores.BrowserLocalStorageKeyStore(),
-  //     },
-  //     ...config,
-  //   });
-  // };
 
-  function isConnectedToNear() {
-    console.log(nearConnection());
+  function signIn() {
+    console.log(contract());
+    console.log(currentUser());
+    console.log(walletConnection());
+
   }
 
   return (
     <div class="flex bg-indigo-500">
-      <Show when={isSignedIn()} fallback={<button>Sign In</button>}>
+      <Show
+        when={isSignedIn()}
+        fallback={<button onClick={signIn}>Sign In</button>}
+      >
         <button>Sign Out</button>
       </Show>
     </div>
